@@ -73,4 +73,59 @@ You imagine trying to handcraft the rules for one one hundred and one different 
 
 5. Finally, the neural network outputs convert these numerical representations into human readable representation.
 
+# Anatomy of Neural Networks
 
+![ Anatomy of Neural Networks](./images/anatomy_of_neural_network.png)
+
+### Input Layer
+
+- Here, we can see we neural network have two nodes (or) neurons in it's first layer that is the **Input Layer**
+
+    **Input layer** (#units/neurons = 2) 
+
+- **Input layer** is used to pass the data to the Hidden layer(s) (or) to the neural network.
+
+
+### Hidden Layer(s)
+
+- Here, we can see **Hidden layer** have three nodes (or) neurons It is the middle part of the neural network
+
+    **Hidden Layer(s)** (#units/neurons = 3)
+
+- **Hidden layer** can be more than one (or) multiple as per network requirements.
+
+- **Hidden layer(s)** is used to learn patterns in data.
+
+### Output Layer
+
+- **Output layer** learned representation (or) prediction probabilities
+
+# What is TensorFlow
+
+- End-to-end platform for machine learning
+
+- Write fast deep learning code in python/er accessible languages (able to run on a GPU/TPU)
+
+- Able to access many pre-built deep learning models (TensorFlow Hub)
+
+- Whole stack: preprocess data, model data, deploy model in your application.
+
+- Originally designed and used in-house by Google (now open-source)
+
+## What is a tensor?
+
+![tensors](./images/tensor.png)
+
+- Tensor is a numerical way to represent the information.
+
+- If we want to encode these images, text or audio data in some kind of numerical form. We're going to turning them into Tensor and then, pass them to neural network and then it going to output another tensor which is the patterns that the neural network learns in our original encoding. Then we take the output tensor or the output representation and convert them into something that we can understand..
+
+![](./images/tensor_understanding.png)
+
+- Convert the image into a Tensor (matrix of numbers), a numerical representation.
+
+- Then, these numerical representation (or) tensor sended to the Hidden Layer(s) (or) to the neural network.
+
+- Again the neural network learns the pattern in between the input passed and, convert it into another tensor.
+
+ - Then, this tensor is converted into human understandable representation and predict the correct name of the person shown in the photo.
