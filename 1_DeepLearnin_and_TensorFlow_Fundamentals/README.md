@@ -232,3 +232,46 @@ tensor
 tensor.ndim
 ```
 ![](./images/tensor_with_dimension_3.png)
+
+**Scalar:** a single number<br>
+**Vector:** a number with direction (e.g. wind speed and direction)<br>
+**Matrix:** a 2-dimentional array of numbers
+Tensor: an n-dimentional
+
+## Creating tensors  with `tf.Variable()`
+
+A `variable` maintains shared, persistent state **manipulated** by a program.
+
+The `Variable()` constructor requires an initial value for the variable, which can be a Tensor of any type and shape. 
+
+This initial value defines the type and shape of the variable. 
+
+After construction, the type and shape of the variable are fixed. **The value can be changed using one of the `assign()` methods.**
+
+```python
+changeable_tensor = tf.Variable([10, 7])
+unchangeable_tensor = tf.constant([10, 7])
+
+changeable_tensor, unchangeable_tensor
+
+# Check the indexing of these above two tensors
+changeable_tensor[0]
+
+# Let's try to change the values or manipulating values of changeable tensor
+changeable_tensor[0].assign(7)
+
+# Check the indexing in unchangeable tensor
+unchangeable_tensor[0]
+```
+
+![](./images/tf_Variable_and_indexing.png)
+
+- Here, I created two tensors `changeable_tensor` through `tf.Variable()` method and `unchangeable_tensor` using the `tf.constant()` 
+
+- we can see in the results that while checking the indexing of the tensors both tensors support indexing.
+
+- In `changeable_tensor` we easily manipulate the values or `changeable_tensor[0]` i.e., 10 to 7 using the `assign()` method.
+
+- Now, let's try to manipulate or change the value of `unchangeable_tensor` using the `assign()` method
+
+![](./images/tf_constant_and_value_assignment.png)
