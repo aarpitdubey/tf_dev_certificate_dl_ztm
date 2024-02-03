@@ -189,7 +189,7 @@ vector.ndim
 
 ```python
 matrix = tf.constant([[10, 7],
-             [7, 10]])
+                      [7, 10]])
 
 matrix
 ```
@@ -202,4 +202,33 @@ matrix.ndim
 ```
 ![](./images/matrix_dimensions.png)
 
- 
+- Let's create another tensor (or) another_matrix and check it's dimensions
+
+```python
+# Create another matrix
+
+another_matrix = tf.constant([[10., 7.],
+                              [3.,  2.],
+                              [8.,   9]], dtype=tf.float16) # specify the data type with dtype parameter
+another_matrix
+```
+
+![](./images/another_matrix_with_dimensions.png)
+
+- Create a variable called it as tensor and check its dimensions
+
+```python
+# Let's create a tensor
+tensor = tf.constant([[[1, 2, 3],
+                       [4, 5, 6]],
+                      [[7, 8, 9],
+                       [10, 11, 12]],
+                      [[13, 14, 15],
+                       [16, 17, 18]]])
+
+tensor
+
+# To check the dimension of the tensor
+tensor.ndim
+```
+![](./images/tensor_with_dimension_3.png)
