@@ -171,3 +171,35 @@ vector
 ```
 
 ![](./images/vector_dim.png)
+
+- Checking the dimensions of the vector created.
+
+```python
+vector.ndim
+```
+![](./images/vector_ndim.png)
+
+5. Creating a matrix 
+
+```python
+[[10, 7], 
+[7, 10]]
+```
+- A matrix is collection of rows and columns or multiple row and column vectors.
+
+```python
+matrix = tf.constant([[10, 7],
+             [7, 10]])
+
+matrix
+```
+![](./images/matrix.png)
+
+- Checking out its dimensions
+
+```python
+matrix.ndim
+```
+![](./images/matrix_dimensions.png)
+
+ 
