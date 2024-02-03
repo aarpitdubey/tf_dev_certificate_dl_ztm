@@ -129,3 +129,25 @@ You imagine trying to handcraft the rules for one one hundred and one different 
 - Again the neural network learns the pattern in between the input passed and, convert it into another tensor.
 
  - Then, this tensor is converted into human understandable representation and predict the correct name of the person shown in the photo.
+
+ # TensorFlow Fundamentals
+
+ - Importing the TensorFlow and checking it's current version.
+
+ ```python
+ import tensorflow as tf
+ print(tf.__version__)
+ ```
+
+ ![](./images/importing_tensorflow_check_its_version.png)
+
+ - Creating a new Tensor with zero dimensions that's a scalar
+
+ - using `tf.constant(7)` creating a singled valued vector `[7]`.
+
+ ```python
+ scalar = tf.constant(7)
+ scalar
+ ```
+
+ ![](./images/tensorflow_tf_constant.png)
