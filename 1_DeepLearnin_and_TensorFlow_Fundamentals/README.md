@@ -132,7 +132,7 @@ You imagine trying to handcraft the rules for one one hundred and one different 
 
  # TensorFlow Fundamentals
 
- - Importing the TensorFlow and checking it's current version.
+ 1. Importing the TensorFlow and checking it's current version.
 
  ```python
  import tensorflow as tf
@@ -141,13 +141,33 @@ You imagine trying to handcraft the rules for one one hundred and one different 
 
  ![](./images/importing_tensorflow_check_its_version.png)
 
- - Creating a new Tensor with zero dimensions that's a scalar
+ 2. Creating a new Tensor with zero dimensions that's a scalar
 
- - using `tf.constant(7)` creating a singled valued vector `[7]`.
+ - using `tf.constant(7)` creating a singled valued `7`.
 
  ```python
  scalar = tf.constant(7)
  scalar
  ```
 
- ![](./images/tensorflow_tf_constant.png)
+ ![TensorFlow.constant()](./images/tensorflow_tf_constant.png)
+
+3. Checking the dimensions of the tensor
+
+- using `scalar.ndim` we can find the dimensions of the tensor
+
+```python
+scalar.ndim
+```
+
+![Checking the dimension of the tensor](./images/ndim_checking_the_dimensions.png)
+
+4. Creating a Vector 
+
+```python
+vector =tf.constant([[10, 10])
+
+vector
+```
+
+![](./images/vector_dim.png)
