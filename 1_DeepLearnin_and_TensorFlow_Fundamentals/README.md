@@ -238,6 +238,8 @@ tensor.ndim
 **Matrix:** a 2-dimentional array of numbers
 Tensor: an n-dimentional
 
+![](./images/scalar-vector-matrix-tensor.png)
+
 ## Creating tensors  with `tf.Variable()`
 
 A `variable` maintains shared, persistent state **manipulated** by a program.
@@ -274,4 +276,21 @@ unchangeable_tensor[0]
 
 - Now, let's try to manipulate or change the value of `unchangeable_tensor` using the `assign()` method
 
+The difference between `tf.Variable()` and `tf.constant()` is tensors created with `tf.constant()` are immutable (can't be changed, can only be used to create a new tensor), where as, tensors created with `tf.Variable()` are mutable (can be changed).
+
 ![](./images/tf_constant_and_value_assignment.png)
+
+
+## Creating Random Tensor
+- Random tensors are tensors of some abitrary size which contain random numbers.
+
+#### Why would you want to create random tensors?
+
+- This is what neural networks use to intialize their weights (patterns) that they're trying to learn in the data.
+
+- For example, the process of a neural network learning often involves taking a random n-dimensional array of numbers and refining them until they represent some kind of pattern (a compressed way to represent the original data).
+
+![](./images/how_a_network_learns.png)
+
+**A network learns by starting with random patterns (1) then going through demonstrative examples of data (2) whilst trying to update its random patterns to represent the examples (3).**
+
